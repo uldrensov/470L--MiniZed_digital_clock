@@ -1,0 +1,54 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 2 -x 410 -y 470 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 2 -x 410 -y 500 -defaultsOSRD
+preplace port ARDUINO_IO11_0 -pg 1 -lvl 2 -x 410 -y 110 -defaultsOSRD
+preplace port ARDUINO_IO2_0 -pg 1 -lvl 2 -x 410 -y 200 -defaultsOSRD
+preplace port PL_LED_G_0 -pg 1 -lvl 2 -x 410 -y 380 -defaultsOSRD
+preplace port ARDUINO_IO7_0 -pg 1 -lvl 2 -x 410 -y 350 -defaultsOSRD
+preplace port ARDUINO_IO1_0 -pg 1 -lvl 2 -x 410 -y 170 -defaultsOSRD
+preplace port ARDUINO_IO4_0 -pg 1 -lvl 2 -x 410 -y 260 -defaultsOSRD
+preplace port ARDUINO_A0_0 -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port PL_LED_R_0 -pg 1 -lvl 2 -x 410 -y 410 -defaultsOSRD
+preplace port ARDUINO_IO6_0 -pg 1 -lvl 2 -x 410 -y 320 -defaultsOSRD
+preplace port ARDUINO_A2_0 -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port ARDUINO_IO5_0 -pg 1 -lvl 2 -x 410 -y 290 -defaultsOSRD
+preplace port ARDUINO_A1_0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port ARDUINO_IO12_0 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port ARDUINO_IO0_0 -pg 1 -lvl 2 -x 410 -y 140 -defaultsOSRD
+preplace port ARDUINO_IO3_0 -pg 1 -lvl 2 -x 410 -y 230 -defaultsOSRD
+preplace port ARDUINO_IO10_0 -pg 1 -lvl 2 -x 410 -y 80 -defaultsOSRD
+preplace port ARDUINO_IO9_0 -pg 1 -lvl 2 -x 410 -y 50 -defaultsOSRD
+preplace port ARDUINO_IO8_0 -pg 1 -lvl 2 -x 410 -y 20 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 180 -y 540 -defaultsOSRD
+preplace inst DIGITAL_CLOCK_0 -pg 1 -lvl 1 -x 180 -y 210 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 30 20 330
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO11 1 1 1 380J 110n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO2 1 1 1 NJ 200
+preplace netloc DIGITAL_CLOCK_0_PL_LED_G 1 1 1 350J 320n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO7 1 1 1 360J 300n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO1 1 1 1 370J 170n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO4 1 1 1 390J 240n
+preplace netloc ARDUINO_A0_0_1 1 0 1 20J 170n
+preplace netloc DIGITAL_CLOCK_0_PL_LED_R 1 1 1 340J 340n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO6 1 1 1 370J 280n
+preplace netloc ARDUINO_A2_0_1 1 0 1 NJ 230
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO5 1 1 1 380J 260n
+preplace netloc ARDUINO_A1_0_1 1 0 1 30J 200n
+preplace netloc ARDUINO_IO12_0_1 1 0 1 20J 250n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO0 1 1 1 390J 140n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO3 1 1 1 370J 220n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO10 1 1 1 370J 80n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO9 1 1 1 350J 50n
+preplace netloc DIGITAL_CLOCK_0_ARDUINO_IO8 1 1 1 340J 20n
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 NJ 500
+preplace netloc processing_system7_0_DDR 1 1 1 370J 470n
+levelinfo -pg 1 0 180 410
+pagesize -pg 1 -db -bbox -sgen -170 0 580 680
+"
+}
+{
+   "da_ps7_cnt":"1"
+}

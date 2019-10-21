@@ -1,0 +1,2306 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 18300
+License: Customer
+
+Current time: 	Fri Oct 18 14:14:10 PDT 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 151 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	uldrensov
+User home directory: C:/Users/uldrensov
+User working directory: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/uldrensov/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/uldrensov/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/uldrensov/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/vivado.log
+Vivado journal file location: 	C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/vivado.jou
+Engine tmp dir: 	C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/.Xil/Vivado-18300-DESKTOP-SP15L6C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 633 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 81 MB (+82274kb) [00:00:11]
+// [Engine Memory]: 652 MB (+531745kb) [00:00:11]
+// [GUI Memory]: 105 MB (+21428kb) [00:00:11]
+// [GUI Memory]: 124 MB (+14472kb) [00:00:12]
+// [Engine Memory]: 688 MB (+4327kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3280 ms.
+// Tcl Message: open_project C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 705 MB. GUI used memory: 61 MB. Current time: 10/18/19, 2:14:15 PM PDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 733.758 ; gain = 96.512 
+// Project name: COMPE470L_WEEK6; location: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6; part: xc7z007sclg225-1
+// [Engine Memory]: 743 MB (+21001kb) [00:00:15]
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 783 MB (+3478kb) [00:00:57]
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3781 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,885 MB. GUI used memory: 62 MB. Current time: 10/18/19, 2:15:15 PM PDT
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1933.195 ; gain = 1129.930 
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,915 MB (+1145921kb) [00:01:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  2825 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z007s (JTAG device index = 1) is programmed with a design that has 2 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// [GUI Memory]: 135 MB (+4304kb) [00:01:16]
+// Elapsed time: 15 seconds
+dismissDialog("Auto Connect"); // by (cl)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z007s_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,942 MB. GUI used memory: 77 MB. Current time: 10/18/19, 2:15:32 PM PDT
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 131 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1 (design_1.v)]", 3); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1 (design_1.v), DIGITAL_CLOCK_0 : design_1_DIGITAL_CLOCK_0_1 (Module Reference Wrapper)]", 4); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1 (design_1.v), DIGITAL_CLOCK_0 : design_1_DIGITAL_CLOCK_0_1 (Module Reference Wrapper), design_1_DIGITAL_CLOCK_0_1 (design_1_DIGITAL_CLOCK_0_1.v), inst : DIGITAL_CLOCK (DIGITAL_CLOCK.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1 (design_1.v), DIGITAL_CLOCK_0 : design_1_DIGITAL_CLOCK_0_1 (Module Reference Wrapper), design_1_DIGITAL_CLOCK_0_1 (design_1_DIGITAL_CLOCK_0_1.v), inst : DIGITAL_CLOCK (DIGITAL_CLOCK.v)]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aH, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 580, 1); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 478); // cl (w, cl)
+// Elapsed time: 57 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 309, 387); // cl (w, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// Elapsed time: 455 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1347337 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 69 MB. Current time: 10/18/19, 2:49:05 PM PDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1054 ms. Increasing delay to 3000 ms.
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2126 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Elapsed time: 1362 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 504, 317); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 451, 279); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 234, 454); // cl (w, cl)
+// [GUI Memory]: 145 MB (+3314kb) [00:36:03]
+// Elapsed time: 63 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 247, 422); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 267, 408); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 79, 432); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 146, 135); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 201, 76); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 311, 178); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 311, 178); // cl (w, cl)
+// Elapsed time: 92 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 236, 297); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 224, 305); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 137, 304); // cl (w, cl)
+// Elapsed time: 69 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 382, 450); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 223); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 223); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 294, 413); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 533, 281); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 348); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 348); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 75, 308); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 209, 289); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 202, 324); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 102, 175); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 258, 171); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 236, 429); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 185, 365); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 378, 308); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 404, 320); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 427, 305); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 105, 243); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 258, 327); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 223, 448); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 214, 391); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 407, 261); // cl (w, cl)
+// Elapsed time: 27 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aT, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 216, 427); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 214, 341); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 382, 411); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 180, 329); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 285, 282); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 137, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 306, 344); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 418, 165); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 265, 496); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 233, 412); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 438, 200); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 349, 204); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 182, 137); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 336, 438); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 369, 370); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 330, 366); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 363, 161); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 405, 225); // cl (w, cl)
+// Elapsed time: 21 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 279, 407); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 419, 408); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 435, 387); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 253, 272); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 252, 281); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 389, 224); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 407, 299); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 407, 299); // cl (w, cl)
+// Elapsed time: 40 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 430, 328); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 418, 348); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 219); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 226, 355); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 299, 303); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 320, 324); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 406, 262); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 310, 261); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 567, 282); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 376, 213); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 409, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 525, 319); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 557, 310); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 415, 307); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 343, 130); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 279, 326); // cl (w, cl)
+// Elapsed time: 60 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 494, 442); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 570, 400); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 655, 382); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 369, 116); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 308); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 375, 85); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 280, 274); // cl (w, cl)
+// Elapsed time: 314 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 221, 267); // cl (w, cl)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 66, 203); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 66, 214); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DIGITAL_CLOCK.v", 59, 210); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 70, 225); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 218, 378); // cl (w, cl)
+// Elapsed time: 111 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 473, 310); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 452, 333); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 71, 348); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 218, 272); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 172, 225); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 172, 225); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 141, 179); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 747, 264); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 188, 295); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 199, 137); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 198, 205); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 305, 240); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 265, 306); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 265, 306); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 339); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 288, 313); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 285, 323); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 297, 324); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 159, 388); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 213, 241); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 289, 239); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 293, 239); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 275, 275); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 144, 106); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 241); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 750, 217); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 750, 217, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 608, 325); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 179, 247); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 316, 241); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 180, 243); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 272, 281); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 207, 243); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 202, 241); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 428, 240); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 190, 390); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 295, 178); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 320, 164); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 298, 230); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 434, 401); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 459, 389); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 683, 392); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 489, 359); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 351, 265); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 326, 321); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 74 MB. Current time: 10/18/19, 3:19:10 PM PDT
+// Elapsed time: 138 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 311, 271); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 555, 367); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 378, 369); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 369); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 384, 371); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 146, 126); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 565, 386); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 97, 242); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 178, 319); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 133, 219); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 692, 285); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 225, 224); // cl (w, cl)
+// Elapsed time: 56 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 247, 392); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 166, 162); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 166, 392); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 645, 259); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 143, 309); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 310, 280); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 436, 329); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 586, 285); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 646, 304); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 632, 273); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 670, 414); // cl (w, cl)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'c'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 380, 262); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'c'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 619, 393); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 618, 467); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 325, 340); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 143, 269); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 376, 239); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 688, 266); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'c'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 449, 239); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 404, 245); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 519, 246); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 142, 413); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 286, 389); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 448, 398); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 144, 428); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 688, 434); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'c'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 543, 402); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 575, 412); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 673, 411); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 286, 399); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 157, 363); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 142, 348); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 103, 320); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 473, 299); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 309, 318); // cl (w, cl)
+// Elapsed time: 104 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 107, 347); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 331, 340); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 233, 196); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 268, 300); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 166, 361); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 230, 350); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 252, 288); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 130, 297); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 159, 283); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 231, 156); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 187, 162); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 285, 199); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 324, 348); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 276, 341); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 721, 351); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 505, 339); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 618, 353); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 561, 205); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 730, 196); // cl (w, cl)
+// Elapsed time: 33 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 319, 186); // cl (w, cl)
+// Elapsed time: 71 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 435, 205); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 781, 203); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 707, 240); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 649, 217); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 739, 220); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 868, 218); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 733, 224); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 748, 224); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 650, 232); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 706, 223); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 725, 227); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 927, 218); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 947, 223); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 530, 223); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 319, 250); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 744, 224); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 296, 440); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 305, 344); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 274, 238); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 733, 349); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 524, 197); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 480, 323); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 365, 400); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 365, 400, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 365, 400); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 365, 400, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 365, 400); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 365, 400, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 348, 412); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 101 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 346, 319); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 288, 350); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 367); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 271, 425); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 362); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 252, 285); // cl (w, cl)
+// Elapsed time: 49 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 244); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 186 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 370, 368); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 282, 450); // cl (w, cl)
+// Elapsed time: 228 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 282, 450); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 191, 261); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 373, 380); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 73 MB. Current time: 10/18/19, 3:49:10 PM PDT
+// Elapsed time: 135 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 372, 380); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 324, 187); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 292, 314); // cl (w, cl)
+// Elapsed time: 152 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 301, 293); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 275, 313); // cl (w, cl)
+// Elapsed time: 41 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 275, 313); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 74, 263); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 238, 294); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 324, 223); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 226, 236); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 208, 242); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 291, 101); // cl (w, cl)
+// Elapsed time: 282 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 496, 385); // cl (w, cl)
+// Elapsed time: 69 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 190, 114); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 245, 225); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 244, 225); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 215, 283); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 229, 256); // cl (w, cl)
+// Elapsed time: 86 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DIGITAL_CLOCK.v", 262, 307); // cl (w, cl)
+// Elapsed time: 156 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 134, 260); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 458, 262); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 553, 318); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 813, 325); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 813, 325); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 12, 301); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 523, 371); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 883, 92); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 195, 174); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 307, 387); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 351, 388); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 351, 388); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 351, 388); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 351, 388, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 285, 242); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 234, 203); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 210, 184); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 271, 249); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 415, 296); // cl (w, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// Elapsed time: 16 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 600, 359, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectCodeEditor("DIGITAL_CLOCK.v", 473, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 473, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 291, 249); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 362, 417); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 371, 445); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 389, 429); // cl (w, cl)
+// Elapsed time: 67 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 307, 393); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 562, 405); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 363, 336); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 272, 345); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 244, 321); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 953, 410); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 111, 391); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 179, 370); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 232, 329); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 234, 404); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 158, 170); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 153, 433); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 263, 457); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 280, 454); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 459, 389); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 520, 416); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 324, 416); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 289, 455); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 241, 430); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 831, 392); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 172, 487); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 213, 519); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 213, 519); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 349, 412); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 638, 402); // cl (w, cl)
+// Elapsed time: 55 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 120, 288); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 141, 405); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 221, 332); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 370, 411); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 277, 358); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 225, 370); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 359); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 64 MB. Current time: 10/18/19, 4:19:11 PM PDT
+// Elapsed time: 253 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 359); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 367, 477); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 375, 390); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 297, 267); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 297, 267, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 297, 267); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 297, 267, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 286, 287); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 264, 330); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 288, 265); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 308, 243); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 352); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 131, 257); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 116, 284); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 112, 284); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 244, 308); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 149, 389); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 224, 326); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 70, 333); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 147, 366); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 105, 388); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 155, 353); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 140, 302); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 138, 326); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 308); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 1, 390); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 10, 371); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 10, 371, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectCodeEditor("DIGITAL_CLOCK.v", 10, 371); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 10, 371, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 10, 371); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 210, 242); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 68, 257); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 61, 300); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 102, 207); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 175, 303); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 175, 303); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 205, 322); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 248, 349); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 335, 370); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 408); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 220, 203); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 256, 215); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 406, 338); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 206, 200); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 291, 236); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 325, 225); // cl (w, cl)
+// Elapsed time: 71 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 325, 225); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 154, 453); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 154, 453); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 182, 368); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 283, 253); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 154, 285); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 338, 324); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 128, 512); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 684, 430); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 586, 437); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 585, 437); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 585, 437, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 568, 460); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 118, 522); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 229, 479); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 486, 447); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 899, 446); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 663, 450); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 419); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 173, 474); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 142, 427); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 1094, 413); // cl (w, cl)
+// Elapsed time: 24 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "disa"); // l (aT, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 87, 22); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 233, 234); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 410, 294); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 496, 430); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 152, 405); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 481, 414); // cl (w, cl)
+// Elapsed time: 216 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 600, 346); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 779, 457); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 126, 461); // cl (w, cl)
+// Elapsed time: 47 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 515, 468); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 515, 468); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 326, 266); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 211, 445); // cl (w, cl)
+// Elapsed time: 173 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 211, 445); // cl (w, cl)
+// Elapsed time: 140 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 342, 487); // cl (w, cl)
+// Elapsed time: 66 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 372, 536); // cl (w, cl)
+// Elapsed time: 130 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 334, 539); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 371, 474); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 394, 551); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 493, 533); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 369, 529); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 63 MB. Current time: 10/18/19, 4:49:11 PM PDT
+// Elapsed time: 178 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 882, 240); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 241, 241); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 353, 250); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 242, 240); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 708, 235); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 396, 239); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 396, 239); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 396, 239); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 396, 265); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 585, 370); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 593, 346); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 514, 394); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 459, 341); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 482, 368); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 248, 316); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 332, 471); // cl (w, cl)
+// Elapsed time: 54 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 523, 453); // cl (w, cl)
+// Elapsed time: 48 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 462, 224); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 260, 458); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 291, 408); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 291, 408, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectCodeEditor("DIGITAL_CLOCK.v", 379, 336); // cl (w, cl)
+// Elapsed time: 85 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 387, 323); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 287, 140); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 287, 140, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 260); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 231, 310); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 205, 423); // cl (w, cl)
+// Elapsed time: 107 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 263); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 185, 485); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 185, 485, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 264, 497); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 264, 497, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 423, 215); // cl (w, cl)
+// Elapsed time: 48 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 280, 479); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 280, 479, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 511); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 511, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 260, 491); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 260, 491, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 376 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 284, 514); // cl (w, cl)
+// Elapsed time: 33 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 533, 578); // cl (w, cl)
+// Elapsed time: 39 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 187, 285); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 143, 370); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 290, 303); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 144, 305); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 283, 315); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 430, 302); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 614, 318); // cl (w, cl)
+// Elapsed time: 49 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 147, 323); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 747, 346); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 753, 324); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 224, 283); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 207, 338); // cl (w, cl)
+// Elapsed time: 41 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 111, 286); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 817, 323); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 266); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 266); // cl (w, cl)
+// Elapsed time: 37 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 64 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 588, 540); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 660, 344); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 253, 172); // cl (w, cl)
+// Elapsed time: 136 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 106, 200); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 1032, 240); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 186, 198); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 186, 198); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 189, 474); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 363, 477); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 367, 331); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 188, 393); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 188, 393); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 236, 426); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 294, 471); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 240, 331); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 438); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 270, 438, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 266, 384); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 281, 487); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 236, 442); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 256, 370); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 567, 138); // cl (w, cl)
+// Elapsed time: 57 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 157, 347); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 214, 271); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 364, 305); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 121, 278); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 209, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 209, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 209, 326, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 209, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 64, 329); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 561, 296); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 561, 297); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 239, 298); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 63 MB. Current time: 10/18/19, 5:19:11 PM PDT
+selectCodeEditor("DIGITAL_CLOCK.v", 248, 306); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 218, 330); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 260, 410); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 121, 372); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 120, 387); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 173, 391); // cl (w, cl)
+// Elapsed time: 39 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 225, 430); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 115, 429); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 106, 411); // cl (w, cl)
+// Elapsed time: 42 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 245, 309); // cl (w, cl)
+// Elapsed time: 310 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 231 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 215, 453); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 214, 389); // cl (w, cl)
+// Elapsed time: 58 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 111, 374); // cl (w, cl)
+// Elapsed time: 39 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 290, 355); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 280, 381); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 271, 368); // cl (w, cl)
+// Elapsed time: 58 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 443, 311); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 320, 445); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 316, 482); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 491, 412); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 553, 85); // cl (w, cl)
+// Elapsed time: 14 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mode-s"); // l (aT, cl)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 611, 500); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 645, 450); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 177, 460); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: update_module_reference design_1_DIGITAL_CLOCK_0_1 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:module_ref:DIGITAL_CLOCK:1.0 - DIGITAL_CLOCK_0 Successfully read diagram <design_1> from BD file <C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1392 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_DIGITAL_CLOCK_0_1 to use current project options 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2152.816 ; gain = 128.930 update_module_reference: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2152.816 ; gain = 128.930 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block DIGITAL_CLOCK_0 . 
+// Tcl Message: Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 18 17:36:16 2019] Launched design_1_DIGITAL_CLOCK_0_1_synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/design_1_DIGITAL_CLOCK_0_1_synth_1/runme.log [Fri Oct 18 17:36:16 2019] Launched synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2268.871 ; gain = 116.055 
+// 'k' command handler elapsed time: 16 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 153 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Oct 18 17:38:50 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 84 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // ah (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Oct 18 17:40:16 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 87 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1992 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z007s_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// [GUI Memory]: 159 MB (+7378kb) [03:29:21]
+// Elapsed time: 79 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DIGITAL_CLOCK.v", 0); // k (j, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 65, 66); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 278, 152); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 340, 192); // cl (w, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aH, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 376, 223); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 91, 328); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 91, 328, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 91, 328); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 252, 253); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 262, 240); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 89 MB. Current time: 10/18/19, 5:49:11 PM PDT
+// Elapsed time: 1138 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 166, 89); // cl (w, cl)
+// Elapsed time: 63 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 632, 55); // cl (w, cl)
+// Elapsed time: 94 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 579, 134); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 530, 199); // cl (w, cl)
+// Elapsed time: 53 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 151, 286); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 169, 321); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 194, 306); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 667, 285); // cl (w, cl)
+// Elapsed time: 30 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 158, 354); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 178, 139); // cl (w, cl)
+typeControlKey((HResource) null, "DIGITAL_CLOCK.v", 'v'); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 74, 143); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 685, 119); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 222, 345); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 154, 370); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 153, 350); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 117, 328); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 177, 327); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 675, 200); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 526, 144); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 534, 134); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 530, 161); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 542, 183); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 542, 183, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 509, 238); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 492, 282); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 187 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 340, 328); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 336); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 254, 336); // cl (w, cl)
+// Elapsed time: 40 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 248, 541); // cl (w, cl)
+// Elapsed time: 49 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 131, 373); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 131, 373, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 131, 373); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("DIGITAL_CLOCK.v", 87, 378); // cl (w, cl)
+// Elapsed time: 182 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 512, 307); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 512, 307); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 612, 255); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 176, 301); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 186, 308); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 256, 307); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 89 MB. Current time: 10/18/19, 6:19:12 PM PDT
+// Elapsed time: 62 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: update_module_reference design_1_DIGITAL_CLOCK_0_1 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_DIGITAL_CLOCK_0_1 to use current project options 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block DIGITAL_CLOCK_0 . 
+// Tcl Message: Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 18 18:19:21 2019] Launched design_1_DIGITAL_CLOCK_0_1_synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/design_1_DIGITAL_CLOCK_0_1_synth_1/runme.log [Fri Oct 18 18:19:21 2019] Launched synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 134 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Oct 18 18:21:36 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 70 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // ah (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Oct 18 18:22:49 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 67 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// Elapsed time: 67 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 191 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 499, 214); // cl (w, cl)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aH, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aH, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 936, 260); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 588, 601); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 105, 494); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 324, 304); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 94, 320); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 107, 326); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 799, 326); // cl (w, cl)
+// Elapsed time: 34 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 623, 322); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 628, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 582, 324); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 692, 323); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 777, 326); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 833, 332); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 833, 332); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 818, 324); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 745, 334); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 920, 320); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 518, 330); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 767, 323); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 483, 230); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 170, 202); // cl (w, cl)
+// Elapsed time: 57 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 280, 284); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 359, 317); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 559, 335); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// Tcl Message: update_module_reference design_1_DIGITAL_CLOCK_0_1 
+// TclEventType: RUN_RESET
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_DIGITAL_CLOCK_0_1 to use current project options 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block DIGITAL_CLOCK_0 . 
+// Tcl Message: Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 18 18:32:57 2019] Launched design_1_DIGITAL_CLOCK_0_1_synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/design_1_DIGITAL_CLOCK_0_1_synth_1/runme.log [Fri Oct 18 18:32:57 2019] Launched synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 147 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Oct 18 18:35:25 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 133 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // ah (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Oct 18 18:37:41 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 82 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// Elapsed time: 54 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 287 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 417, 227); // cl (w, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// Elapsed time: 72 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cl)
+// Elapsed time: 85 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 662, 185); // cl (w, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2001 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DIGITAL_CLOCK.v", 0); // k (j, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z007s_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 90 MB. Current time: 10/18/19, 6:49:12 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 91 MB. Current time: 10/18/19, 7:19:12 PM PDT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// Elapsed time: 3630 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 79 MB. Current time: 10/18/19, 7:49:13 PM PDT
+// Elapsed time: 279 seconds
+dismissDialog("Close Hardware Target"); // n (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  2548240 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 78 MB. Current time: 10/18/19, 8:36:27 PM PDT
+// Elapsed time: 2573 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aH, cl)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aH, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 422, 299); // cl (w, cl)
+// Elapsed time: 131 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 111, 390); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 423, 399); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 413, 378); // cl (w, cl)
+// Elapsed time: 86 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 394, 314); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 735, 392); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 267, 273); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 311, 398); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 332, 349); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 332, 349); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 384, 393); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 506, 171); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 384, 224); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 236, 308); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 360, 231); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 373, 132); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 223, 135); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 233, 154); // cl (w, cl)
+// Elapsed time: 235 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 132, 279); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 105, 260); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 239, 304); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 355, 327); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 300, 169); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 164, 187); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 301, 240); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 291, 218); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 285, 277); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 180, 238); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 219, 161); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 160, 218); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 271, 189); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 263, 264); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 250, 313); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 249, 314); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 249, 314, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 249, 314); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 249, 314, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 238, 338); // cl (w, cl)
+// Elapsed time: 111 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 301, 264); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 234, 71); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 244, 363); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 240, 70); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 262, 178); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 257, 166); // cl (w, cl)
+// Elapsed time: 78 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 108, 325); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 150, 211); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 641, 362); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 505, 362); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 607, 369); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 611, 369); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 569, 126); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 843, 373); // cl (w, cl)
+// Elapsed time: 40 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 650, 337); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 242, 125); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 358, 495); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 517, 388); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 353, 246); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 578, 300); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 338, 228); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 312, 346); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 312, 346); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 330, 275); // cl (w, cl)
+// Elapsed time: 74 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 338, 137); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "countd"); // l (aT, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 319, 107); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 456, 390); // cl (w, cl)
+// Elapsed time: 31 seconds
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 339, 208); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 339, 208); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 277, 480); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 612, 330); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 612, 330); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 458, 204); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 907, 261); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 549, 266); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 550, 266); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 515, 261); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 651, 263); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 165, 288); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 480, 225); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 791, 224); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 389, 296); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 400, 495); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 424, 242); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 58 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 141, 195); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 141, 195, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 110 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 231, 205); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 353, 389); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 362, 434); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 638, 423); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 766, 432); // cl (w, cl)
+// Elapsed time: 46 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 534, 582); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 384, 272); // cl (w, cl)
+// Elapsed time: 56 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 387, 235); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 78 MB. Current time: 10/18/19, 9:06:27 PM PDT
+// Elapsed time: 40 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 447, 412); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 517, 405); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 578, 405); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 578, 405); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 595, 339); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 523, 95); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 460, 101); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 395, 407); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 448, 365); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 518, 486); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 457, 275); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 457, 276); // cl (w, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 457, 276, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("DIGITAL_CLOCK.v", 457, 262); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DIGITAL_CLOCK.v", 261, 185); // cl (w, cl)
+// Elapsed time: 50 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ah (cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Refresh and Launch"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: update_module_reference design_1_DIGITAL_CLOCK_0_1 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Upgrading 'C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_DIGITAL_CLOCK_0_1 to use current project options 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: Wrote  : <C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/sim/design_1.v VHDL Output written to : C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block DIGITAL_CLOCK_0 . 
+// Tcl Message: Exporting to file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Oct 18 21:09:31 2019] Launched design_1_DIGITAL_CLOCK_0_1_synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/design_1_DIGITAL_CLOCK_0_1_synth_1/runme.log [Fri Oct 18 21:09:31 2019] Launched synth_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 89 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Oct 18 21:11:00 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 92 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // ah (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Oct 18 21:12:34 2019] Launched impl_1... Run output will be captured here: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 83 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1847 ms.
+// TclEventType: HW_DEVICE_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 1); // k (j, cl)
+// TclEventType: HW_ILA_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z007s_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z007s_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z007s (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DIGITAL_CLOCK.v", 0); // k (j, cl)
+selectCodeEditor("DIGITAL_CLOCK.v", 259, 210); // cl (w, cl)
+// Elapsed time: 63 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 446, 51); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("DIGITAL_CLOCK.v", 1132, 104); // cl (w, cl)

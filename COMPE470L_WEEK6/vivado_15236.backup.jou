@@ -1,0 +1,129 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 17 23:33:08 2019
+# Process ID: 15236
+# Current directory: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2600 C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.xpr
+# Log file: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/vivado.log
+# Journal file: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+save_bd_design
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets ARDUINO_A5_0_1] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO10] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO0] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO6] [get_bd_nets DIGITAL_CLOCK_0_PL_LED_G] [get_bd_nets ARDUINO_A2_0_1] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO11] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO1] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO2] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO4] [get_bd_nets processing_system7_0_FCLK_CLK0] [get_bd_nets ARDUINO_A0_0_1] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO8] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO3] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO5] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO7] [get_bd_nets ARDUINO_A1_0_1] [get_bd_nets DIGITAL_CLOCK_0_ARDUINO_IO9] [get_bd_nets DIGITAL_CLOCK_0_PL_LED_R] [get_bd_cells DIGITAL_CLOCK_0]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_ports ARDUINO_A0_0] [get_bd_ports ARDUINO_A1_0] [get_bd_ports ARDUINO_IO11_0] [get_bd_ports ARDUINO_A2_0] [get_bd_ports ARDUINO_IO10_0] [get_bd_ports ARDUINO_A5_0] [get_bd_ports ARDUINO_IO0_0] [get_bd_ports ARDUINO_IO1_0]
+delete_bd_objs [get_bd_ports ARDUINO_IO3_0] [get_bd_ports ARDUINO_IO4_0] [get_bd_ports ARDUINO_IO6_0] [get_bd_ports ARDUINO_IO5_0] [get_bd_ports ARDUINO_IO2_0] [get_bd_ports ARDUINO_IO7_0]
+delete_bd_objs [get_bd_ports PL_LED_R_0] [get_bd_ports PL_LED_G_0] [get_bd_ports ARDUINO_IO9_0] [get_bd_ports ARDUINO_IO8_0]
+create_bd_cell -type module -reference DIGITAL_CLOCK DIGITAL_CLOCK_0
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins DIGITAL_CLOCK_0/CLK]
+startgroup
+make_bd_pins_external  [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO11] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO2] [get_bd_pins DIGITAL_CLOCK_0/PL_LED_G] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO7] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO1] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO4] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_A0] [get_bd_pins DIGITAL_CLOCK_0/PL_LED_R] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO6] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_A2] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO5] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_A1] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO12] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO0] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO3]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO10] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO9] [get_bd_pins DIGITAL_CLOCK_0/ARDUINO_IO8]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_DIGITAL_CLOCK_0_1_synth_1
+export_simulation -of_objects [get_files C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.ip_user_files -ipstatic_source_dir C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.cache/compile_simlib/modelsim} {questa=C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.cache/compile_simlib/questa} {riviera=C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.cache/compile_simlib/riviera} {activehdl=C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+current_hw_device [get_hw_devices xc7z007s_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+update_module_reference design_1_DIGITAL_CLOCK_0_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]

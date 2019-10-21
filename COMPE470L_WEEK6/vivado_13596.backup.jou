@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 13 03:38:14 2019
+# Process ID: 13596
+# Current directory: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11460 C:\Users\uldrensov\Desktop\COMPE470L_WEEK6\COMPE470L_WEEK6.xpr
+# Log file: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/vivado.log
+# Journal file: C:/Users/uldrensov/Desktop/COMPE470L_WEEK6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.xpr
+open_run impl_1
+update_compile_order -fileset sources_1
+startgroup
+place_ports ARDUINO_A0_0 F14
+set_property is_loc_fixed true [get_ports [list  ARDUINO_A0_0]]
+endgroup
+startgroup
+place_ports ARDUINO_A1_0 F13
+set_property is_loc_fixed true [get_ports [list  ARDUINO_A1_0]]
+endgroup
+startgroup
+place_ports ARDUINO_A2_0 F12
+set_property is_loc_fixed true [get_ports [list  ARDUINO_A2_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO11_0 M11
+set_property is_loc_fixed false [get_ports [list  ARDUINO_IO11_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO1_0 P8
+set_property is_loc_fixed false [get_ports [list  ARDUINO_IO1_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO2_0 P9
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO2_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO3_0 R7
+set_property is_loc_fixed false [get_ports [list  ARDUINO_IO3_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO1_0 P8
+set_property is_loc_fixed false [get_ports [list  ARDUINO_IO1_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO0_0 P10
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO0_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO1_0 P8
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO1_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO11_0 M11
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO11_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO4_0 N7
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO4_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO3_0 R7
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO3_0]]
+endgroup
+place_ports ARDUINO_IO0_0 R8
+startgroup
+place_ports ARDUINO_IO5_0 R10
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO5_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO6_0 P10
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO6_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO7_0 N8
+set_property is_loc_fixed false [get_ports [list  ARDUINO_IO7_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO8_0 M9
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO8_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO9_0 N9
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO9_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO10_0 M10
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO10_0]]
+endgroup
+startgroup
+place_ports ARDUINO_IO7_0 N8
+set_property is_loc_fixed true [get_ports [list  ARDUINO_IO7_0]]
+endgroup
+set_property target_constrs_file C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.srcs/constrs_1/imports/Desktop/MiniZed_Constraints_Rev1_170613.xdc [current_fileset -constrset]
+save_constraints -force
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_A0_0]]
+set_property pulltype PULLDOWN [get_ports [list ARDUINO_A0_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_A1_0]]
+set_property pulltype PULLDOWN [get_ports [list ARDUINO_A1_0]]
+set_property pulltype PULLDOWN [get_ports [list ARDUINO_A2_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_A2_0]]
+save_constraints -force
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO0_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO1_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO2_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO3_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO4_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO5_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO6_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO7_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO8_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO9_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO10_0]]
+set_property iostandard LVCMOS33 [get_ports [list ARDUINO_IO11_0]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+current_hw_device [get_hw_devices xc7z007s_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_0
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_0
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run design_1_DIGITAL_CLOCK_0_0_synth_1
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_0
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_0
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run design_1_DIGITAL_CLOCK_0_0_synth_1
+reset_run synth_1
+update_module_reference design_1_DIGITAL_CLOCK_0_0
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/uldrensov/Desktop/COMPE470L_WEEK6/COMPE470L_WEEK6.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]

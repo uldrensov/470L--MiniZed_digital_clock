@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Oct 18 21:11:44 2019
+| Host         : DESKTOP-SP15L6C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z007s
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    78 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              91 |           24 |
+| Yes          | No                    | No                     |              27 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              69 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|                       Clock Signal                       |                     Enable Signal                     |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++----------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/min_al[5]_i_2_n_0     | design_1_i/DIGITAL_CLOCK_0/inst/min_al[5]_i_1_n_0     |                1 |              1 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/sec_cd_set[5]_i_1_n_0 | design_1_i/DIGITAL_CLOCK_0/inst/min_cd_set[4]_i_1_n_0 |                1 |              1 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/hour_set              |                                                       |                3 |              3 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/hour_set              | design_1_i/DIGITAL_CLOCK_0/inst/hour_set[4]_i_1_n_0   |                1 |              3 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/min_al[5]_i_2_n_0     |                                                       |                1 |              3 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/hour_al[4]_i_1_n_0    |                                                       |                2 |              5 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/hour_set              | design_1_i/DIGITAL_CLOCK_0/inst/min_set[5]_i_1_n_0    |                3 |              5 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/sec_cd_set[5]_i_1_n_0 |                                                       |                4 |              5 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               | design_1_i/DIGITAL_CLOCK_0/inst/sec_cd_set[5]_i_1_n_0 | design_1_i/DIGITAL_CLOCK_0/inst/sec_cd_set[4]_i_1_n_0 |                1 |              5 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/ARDUINO_IO0_reg_i_2_n_0 |                                                       |                                                       |                3 |              7 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          | design_1_i/DIGITAL_CLOCK_0/inst/min_cd[4]_i_1_n_0     |                                                       |                6 |             11 |
+|  design_1_i/DIGITAL_CLOCK_0/inst/bounceCLK               |                                                       |                                                       |                5 |             13 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          |                                                       |                                                       |               13 |             19 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          |                                                       | design_1_i/DIGITAL_CLOCK_0/inst/clear                 |                5 |             19 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          |                                                       | design_1_i/DIGITAL_CLOCK_0/inst/beep0                 |                6 |             23 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          |                                                       | design_1_i/DIGITAL_CLOCK_0/inst/debounce[0]_i_1_n_0   |                6 |             23 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          |                                                       | design_1_i/DIGITAL_CLOCK_0/inst/colontick[0]_i_1_n_0  |                7 |             26 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          | design_1_i/DIGITAL_CLOCK_0/inst/tick20                | design_1_i/DIGITAL_CLOCK_0/inst/tick2[0]_i_1_n_0      |                7 |             27 |
+|  design_1_i/processing_system7_0/inst/FCLK_CLK0          | design_1_i/DIGITAL_CLOCK_0/inst/tick[0]_i_2_n_0       | design_1_i/DIGITAL_CLOCK_0/inst/tick[0]_i_1_n_0       |                7 |             27 |
++----------------------------------------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+
